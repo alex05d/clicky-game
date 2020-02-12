@@ -1,0 +1,25 @@
+#banner{
+    height: 200px;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+.container-fluid{
+    padding: 0px;
+}
+span{
+    width: 100%;
+    padding-top:5%;
+}
+.navbar{
+    height: 100px;
+    justify-content: center;
+}
+ul{
+    justify-content: center;
+}
+li{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 5px;
+}
