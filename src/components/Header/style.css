@@ -13,6 +13,7 @@ span{
 .navbar{
     height: 100px;
     justify-content: center;  
+    padding: 0px;
 }
 #top-nav{
     border-bottom: blue;
@@ -21,10 +22,20 @@ span{
 }
 ul{
     justify-content: center;
+    width: 100%;
 }
 li{
     float: left;
     list-style: none;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 5px;
+}
+#logo{
+    left: 30px;
+    font-size: 30px;
+}
+#score{
+    right: 30px;
+    font-size: 30px;
+    float: right;
 }

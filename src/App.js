@@ -20,6 +20,9 @@ class App extends Component {
     const images = this.state.images.map(image => {
       if (image.id === id) {
         image.clicked = true;
+      } else {
+
+        image.clicked = false;
       }
       return image;
     });
@@ -27,6 +30,8 @@ class App extends Component {
     images.sort(() => .5 - Math.random());
     this.setState({ images });
   }
+
+
 
   checkClick = (id, alreadyClick) => {
 
@@ -50,6 +55,7 @@ class App extends Component {
     } else {
 
       this.setState({ score: this.state.score = 0 })
+      this.shuffle(id);
       //    send lose message 
       //      clear score 
       //        restart game
