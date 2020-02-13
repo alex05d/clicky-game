@@ -1,6 +1,6 @@
-.navbar{
+#bottom-nav{
     height: 50px;
-    background-color: lightgrey;
+    background-color: white;
 }
 i{
     color: blue;

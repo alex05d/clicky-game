@@ -5,7 +5,7 @@ function Header(props) {
 
     return (
         <div className="container-fluid">
-            <nav className="navbar fixed-top navbar-light bg-light">
+            <nav className="navbar fixed-top" id="top-nav">
                 <ul>
                     <li>Clicky Game</li>
                     <li>Click an image to begin</li>

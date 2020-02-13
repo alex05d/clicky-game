@@ -9,7 +9,8 @@ function Game(props) {
                     alt={props.name}
                     src={props.image}
                     id={props.id}
-                    onClick={() => props.shuffle(props.id)}
+                    onClick={() => props.checkClick(props.id, props.clicked)}
+                // onClick={() => props.shuffle(props.id)}
                 />
             </div>
         </div>

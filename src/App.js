@@ -28,6 +28,36 @@ class App extends Component {
     this.setState({ images });
   }
 
+  checkClick = (id, alreadyClick) => {
+
+    // if the component has not been clicked 
+    if (!alreadyClick) {
+      //      increment score
+      // this.state.score += 1;
+      if (this.state.score >= this.state.topScore) {
+        this.setState({ topScore: this.state.topScore + 1 })
+        this.setState({ score: this.state.score + 1 })
+
+      } else {
+
+        this.setState({ score: this.state.score + 1 })
+      }
+
+      // change clicked to true
+      // call shuffle function
+      this.shuffle(id);
+
+    } else {
+
+      this.setState({ score: this.state.score = 0 })
+      //    send lose message 
+      //      clear score 
+      //        restart game
+
+    }
+    // else 
+  }
+
 
 
   render() {
@@ -45,7 +75,8 @@ class App extends Component {
                 id={image.id}
                 key={image.id}
                 image={image.image}
-                shuffle={this.shuffle}
+                clicked={image.clicked}
+                checkClick={this.checkClick}
               />
             ))}
           </div>

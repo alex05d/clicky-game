@@ -12,7 +12,12 @@ span{
 }
 .navbar{
     height: 100px;
-    justify-content: center;
+    justify-content: center;  
+}
+#top-nav{
+    border-bottom: blue;
+    border-width: 5px;
+    background-color:white;
 }
 ul{
     justify-content: center;
