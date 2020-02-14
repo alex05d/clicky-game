@@ -14,8 +14,12 @@ function Header(props) {
             <div className="container-fluid text-align-center" id="banner">
                 <div className="row text-align-center">
                     <div className="row text-align-center">
-                        <h1>Clicky Game!</h1>
-                        <h4>Click on an image to earn points, but don't click on any more than once!</h4>
+                        <div className="col-2"></div>
+                        <div className="col-8   justify-content-center" id="bannerTag">
+                            <h1>Clicky Game!</h1>
+                            <h4>Click on an image to earn points, but don't click on any more than once!</h4>
+                        </div>
+                        <div className="col-2"></div>
                     </div>
 
                 </div>

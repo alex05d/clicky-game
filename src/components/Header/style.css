@@ -1,7 +1,9 @@
 #banner{
-    height: 200px;
+    height: 300px;
     margin-top: 50px;
-    background-color: lightgray;
+    background-color: purple;
+    /* background-image: url("/images/pokemon.png"); */
+
 }
 .container-fluid{
     padding: 0px;
@@ -9,6 +11,10 @@
 span{
     width: 100%;
     padding-top:5%;
+}
+#bannerTag{
+    margin-top: 80px;
+    color: white;
 }
 .navbar{
     height: 100px;
@@ -23,19 +29,23 @@ span{
 ul{
     justify-content: center;
     width: 100%;
+    padding-right: 40px;
 }
 li{
     float: left;
     list-style: none;
-    padding-right: 30px;
     padding-top: 5px;
 }
 #logo{
-    left: 30px;
+    width: 300px;
     font-size: 30px;
 }
 #score{
     right: 30px;
     font-size: 30px;
     float: right;
+}
+.row{
+    margin: 0px;
+    width: 100%;
 }

@@ -37,8 +37,6 @@ class App extends Component {
 
     // if the component has not been clicked 
     if (!alreadyClick) {
-      //      increment score
-      // this.state.score += 1;
       if (this.state.score >= this.state.topScore) {
         this.setState({ topScore: this.state.topScore + 1 })
         this.setState({ score: this.state.score + 1 })
@@ -56,12 +54,7 @@ class App extends Component {
 
       this.setState({ score: this.state.score = 0 })
       this.shuffle(id);
-      //    send lose message 
-      //      clear score 
-      //        restart game
-
     }
-    // else 
   }
 
 
